@@ -1,10 +1,13 @@
+% This code segments E coli cells in an image that is a time lapse series of phase contrast along with a fluorescent channel 
+% with varying levels of uniform fluorescent signal in the cytoplasmic area of the cell
+
 clear all;
 
 ColonyDim{5}(1, :) = [1602  375  142   64]; % dimention of sample colony
 
 Directory = 'IndividualColonies/';
 
-for xy = 5:5 % for sample, otherwise use 1:FOV
+for xy = 5:5 % 5:5 is for sample, otherwise use 1:FOV 
     
     figure;
     title(['Fiel of view #' num2str(xy) ] );
